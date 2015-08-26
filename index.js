@@ -1,7 +1,7 @@
 var intervalID = window.setInterval(displayClock, 1000);
 
 function displayClock(time) {
-  var sydney = toLocaleTimeString(timeZone)
+  // var sydney = toLocaleTimeString(timeZone: "Asia/Shanghai")
 
   var currentTime = new Date();
   var period = (currentTime.getHours() > 12) ? "PM" : "AM";
