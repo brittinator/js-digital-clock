@@ -18,7 +18,7 @@ function displayClock(time) {
     } else
       {return hours - 12;}
   }
-
+s
   function addZero(unit) {
     stringUnit = unit.toString();
     unit = stringUnit.length < 2 ? "0" + stringUnit : stringUnit;
