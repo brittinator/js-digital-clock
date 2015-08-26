@@ -1,9 +1,11 @@
 var intervalID = window.setInterval(displayClock, 1000);
+// call displayClock fxn every 1000 ms
 
 function displayClock(time) {
   // var sydney = toLocaleTimeString(timeZone: "Asia/Shanghai")
 
   var currentTime = new Date();
+  // Date is a JS object
   var period = (currentTime.getHours() > 12) ? "PM" : "AM";
 
   var hour = hours(currentTime.getHours());
@@ -25,9 +27,11 @@ function displayClock(time) {
     return unit;
   }
 
-  var clockDiv = document.getElementById("clock")
+  var clockId = document.getElementById('clock')
+  // var clockDiv = document.getElementsByClassName("clock")
+  // var clockDiv = document.getElementById("sydney")
 
-  clockDiv.innerText = timeFormat;
+  clockId.innerText = timeFormat;
 }
 
 displayClock();
